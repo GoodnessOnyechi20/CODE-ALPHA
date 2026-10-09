@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Image Gallery</h1>
+        <p>Explore beautiful moments through photography</p>
+    </header>
+
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="city">City</button>
+        <button class="filter-btn" data-filter="travel">Travel</button>
+        <button class="filter-btn" data-filter="animals">Animals</button>
+    </div>
+
+    <main class="gallery" id="gallery">
+        <div class="gallery-item" data-category="nature" data-title="Beautiful Mountain"
+             data-image="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b">
+            <img src="ML.png" alt="Mountain landscape">
+            <div class="overlay"><h3>Beautiful Mountain</h3></div>
+        </div>
+
+        <div class="gallery-item" data-category="nature" data-title="Forest"
+             data-image="https://images.unsplash.com/photo-1448375240586-882707db888b">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=800" alt="Green forest">
+            <div class="overlay"><h3>Forest</h3></div>
+        </div>
+
+        <div class="gallery-item" data-category="city" data-title="City Skyline"
+             data-image="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df">
+            <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800" alt="City skyline">
+            <div class="overlay"><h3>City Skyline</h3></div>
+        </div>
+
+        <div class="gallery-item" data-category="city" data-title="Modern City"
+             data-image="https://images.unsplash.com/photo-1519501025264-65ba15a82390">
+            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=800" alt="Modern city">
+            <div class="overlay"><h3>Modern City</h3></div>
+        </div>
+
+        <div class="gallery-item" data-category="travel" data-title="Tropical Beach"
+             data-image="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800" alt="Tropical beach">
+            <div class="overlay"><h3>Tropical Beach</h3></div>
+        </div>
+
+        <div class="gallery-item" data-category="travel" data-title="Desert Road"
+             data-image="https://images.unsplash.com/photo-1500534623283-312aade485b7">
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=800" alt="Desert road">
+            <div class="overlay"><h3>Desert Road</h3></div>
+        </div>
+
+        <div class="gallery-item" data-category="animals" data-title="Wild Lion"
+             data-image="https://images.unsplash.com/photo-1546182990-dffeafbe841d">
+            <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=800" alt="Lion">
+            <div class="overlay"><h3>Wild Lion</h3></div>
+        </div>
+
+        <div class="gallery-item" data-category="animals" data-title="Beautiful Horse"
+             data-image="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a">
+            <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=800" alt="Horse">
+            <div class="overlay"><h3>Beautiful Horse</h3></div>
+        </div>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <button class="prev" id="prevBtn">&#10094;</button>
+        <button class="next" id="nextBtn">&#10095;</button>
+
+        <div class="lightbox-content">
+            <button class="close" id="closeBtn">&times;</button>
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-title" id="lightboxTitle"></div>
+            <div class="counter" id="counter"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 My Image Gallery. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

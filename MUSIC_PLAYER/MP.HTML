@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Player</title>
+    <link rel="stylesheet" href="MP.CSS">
+</head>
+<body>
+
+    <div class="player">
+        <h2>My Music Player</h2>
+
+        <div class="cover">🎵</div>
+
+        <h3 id="title">Song Title</h3>
+        <p id="artist">Artist Name</p>
+
+        <audio id="audio"></audio>
+
+        <div class="progress-area">
+            <input type="range" id="progress" value="0" min="0" max="100">
+            <div class="time">
+                <span id="current">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button onclick="previousSong()">⏮</button>
+            <button onclick="playPause()" id="playBtn">▶</button>
+            <button onclick="nextSong()">⏭</button>
+        </div>
+
+        <label for="volume">Volume</label>
+        <input type="range" id="volume"
+               min="0" max="1" step="0.1" value="1">
+
+        <h3>Playlist</h3>
+        <ul id="playlist"></ul>
+    </div>
+
+    <script src="MP.JS"></script>
+</body>
+</html>
